@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test Kaspersky" verbose="1">
+    <suite-files>
+        <suite-file path="TestSuite.xml"/>
+    </suite-files>
+    <parameter name="email" value="testaccount1111@mail.ru"/>
+    <parameter name="password" value="Test1111"/>
+	<test name="KasperskyWindowsInternetSecurityTest">
+        <parameter name="os" value="Windows"/>
+        <parameter name="product" value="Internet Security"/>
+		<classes>
+			<class name="kaspersky.tests.KasperskyTest" />
+        </classes>
+	</test>
+    <test name="KasperskyWindowsTotalSecurityTest">
+        <parameter name="os" value="Windows"/>
+        <parameter name="product" value="Total Security"/>
+        <classes>
+            <class name="kaspersky.tests.KasperskyTest" />
+        </classes>
+    </test>
+    <test name="KasperskyWindowsSafeKidsTest">
+        <parameter name="os" value="Windows"/>
+        <parameter name="product" value="Safe Kids"/>
+        <classes>
+            <class name="kaspersky.tests.KasperskyTest" />
+        </classes>
+    </test>
+    <test name="KasperskyWindowsAntiVirusTest">
+        <parameter name="os" value="Windows"/>
+        <parameter name="product" value="Anti-Virus"/>
+        <classes>
+            <class name="kaspersky.tests.KasperskyTest" />
+        </classes>
+    </test>
+    <test name="KasperskyWindowsPasswordManagerTest">
+        <parameter name="os" value="Windows"/>
+        <parameter name="product" value="Password Manager"/>
+        <classes>
+            <class name="kaspersky.tests.KasperskyTest" />
+        </classes>
+    </test>
+    <test name="KasperskyMacInternetSecurityTest">
+        <parameter name="os" value="Mac"/>
+        <parameter name="product" value="Internet Security"/>
+        <classes>
+            <class name="kaspersky.tests.KasperskyTest" />
+        </classes>
+    </test>
+    <test name="KasperskyMacPasswordManagerTest">
+        <parameter name="os" value="Mac"/>
+        <parameter name="product" value="Password Manager"/>
+        <classes>
+            <class name="kaspersky.tests.KasperskyTest" />
+        </classes>
+    </test>
+    <test name="KasperskyMacSafeKidsTest">
+        <parameter name="os" value="Mac"/>
+        <parameter name="product" value="Safe Kids"/>
+        <classes>
+            <class name="kaspersky.tests.KasperskyTest" />
+        </classes>
+    </test>
+    <test name="KasperskyAndroidInternetSecurityTest">
+        <parameter name="os" value="Android"/>
+        <parameter name="product" value="Internet Security"/>
+        <classes>
+            <class name="kaspersky.tests.KasperskyTest" />
+        </classes>
+    </test>
+    <test name="KasperskyAndroidSafeKidsTest">
+        <parameter name="os" value="Android"/>
+        <parameter name="product" value="Safe Kids"/>
+        <classes>
+            <class name="kaspersky.tests.KasperskyTest" />
+        </classes>
+    </test>
+    <test name="KasperskyAndroidPasswordManagerTest">
+        <parameter name="os" value="Android"/>
+        <parameter name="product" value="Password Manager"/>
+        <classes>
+            <class name="kaspersky.tests.KasperskyTest" />
+        </classes>
+    </test>
+    <test name="Kaspersky_iOS_SafeKidsTest">
+        <parameter name="os" value="iOS"/>
+        <parameter name="product" value="Safe Kids"/>
+        <classes>
+            <class name="kaspersky.tests.KasperskyTest" />
+        </classes>
+    </test>
+    <test name="Kaspersky_iOS_PasswordManagerTest">
+        <parameter name="os" value="iOS"/>
+        <parameter name="product" value="Password Manager"/>
+        <classes>
+            <class name="kaspersky.tests.KasperskyTest" />
+        </classes>
+    </test>
+</suite>
